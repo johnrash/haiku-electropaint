@@ -1,0 +1,28 @@
+name			electropaint
+version			1.0.0-1
+architecture	x86_64
+summary			"ElectroPaint, the SGI IRIX screen saver"
+description		"David Tristram's ElectroPaint, the screen saver of SGI IRIX workstations: a twisting tube of coloured squares. The animation is a rewrite of ElectroPortis, Mark Laws' decompilation of the IRIX binary, and draws exactly what the original draws. Select it in the ScreenSaver preferences."
+packager		"ElectroPaint for Haiku project"
+vendor			"ElectroPaint for Haiku project"
+copyrights {
+	"David Tristram, Tristram Visual (ElectroPaint)"
+	"2014 Mark Laws (ElectroPortis decompilation)"
+	"2026 ElectroPaint for Haiku project"
+}
+licenses {
+	"ElectroPaint"
+	"MIT"
+}
+
+# No "flags system_package": HaikuDepot shows no Install/Uninstall button for
+# system packages.
+
+provides {
+	electropaint = 1.0.0
+}
+
+requires {
+	haiku >= r1~beta6
+	lib:libGL
+}

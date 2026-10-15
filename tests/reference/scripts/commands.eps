@@ -1,0 +1,53 @@
+# Every command except seqkill/seqkillall (ep.c hangs or frees the wrong
+# sequence with those), unsorted frames, a blank line and two bad lines.
+actset: 29, 1.0
+actset: 52, 30.0
+actset: 45, 0.5
+variance: 0.25
+seqdo: 1
+seqdo: 2
+seqdo: 3
+seqname: 1
+duration: 50
+actlim2: 101, 1.0
+actlim1: 101, -1.0
+frame: 30
+actlim1: 123, 0.3
+actlim2: 123, 0.9
+relframe: 20
+actstop: 101
+frame: 10
+actreset: 101
+actlim2: 101, -0.5
+randdelay: 40
+seqloop:
+seqname: 2
+variance: 2.0
+duration: 0.5
+actlim2: 130, 1.0
+actlim1: 130, 0.2
+absframe: 100
+actlim2: 80, 3.0
+actlim2: 87, -2.0
+absframe: 50
+actresetall:
+frame: 200
+seqstop: 3
+seqdo: 2
+seqname: 3
+variance: -1
+actlim1: 94, 2.0
+actlim2: 94, 1.0
+actlim2: 73, 0.3
+actlim2: 38, 120.0
+actlim1: 38, -120.0
+actlim2: 31, 0.08
+actlim2: 18, 1.0
+seqrepeat: 2
+bogus: 1
+frame: 400
+actstopall:
+frame: 100
+seqdo: 3
+
+seqloop:

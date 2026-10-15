@@ -1,0 +1,20 @@
+# seqkill and seqkillall, engine only: ep.c hangs on "seqkill: N" for
+# another sequence and frees memory it still uses for the others.
+seqdo: 1
+seqdo: 2
+seqdo: 3
+seqname: 1
+actlim2: 101, 1.0
+frame: 10
+seqkill: 2
+frame: 10
+seqkill: 1
+seqname: 2
+actlim2: 123, 1.0
+frame: 100
+seqloop:
+seqname: 3
+frame: 50
+seqkillall:
+frame: 10
+seqkill: 3
