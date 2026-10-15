@@ -2,8 +2,7 @@ ElectroPaint for Haiku
 ======================
 
 ElectroPaint, David Tristram's screen saver for Silicon Graphics IRIX
-workstations, as a Haiku screen saver: a slowly twisting tube of coloured,
-outlined squares.
+workstations, as a Haiku screen saver.
 
 ![ElectroPaint running full screen](docs/electropaint.png)
 
